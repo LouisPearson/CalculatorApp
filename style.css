@@ -1,0 +1,86 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    align-items: center;
+    background: linear-gradient(320deg, maroon, white,gold);
+    display: flex;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+    font-display: swap;
+    height:inherit;
+    justify-content: center;
+}
+
+.calc{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: gray;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(35,35,35,0.01);
+    flex-basis: 400px;
+    height: 540px;
+    padding: 20px 35px
+}
+
+.display{
+    background: white;
+    border: 1px solid;
+    border-radius: 10px;
+    font-size: 35px;
+    text-align: right;
+    padding: 20px;
+    width: 320px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.button{
+    background: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: black;
+    flex-basis: 20%;
+    font-family: inherit;
+    font-size: 30px;
+    height: 65px;
+}
+.button:last-child{
+    background: orange;
+    border: 1px solid black;
+    border-radius: 2px;
+    color: black;
+}
+.button:last-child:hover{
+    background: peachpuff;
+    color: inherit;
+}
+.button:hover{
+    background: peachpuff;
+}
+.button:active{
+    background:greenyellow;
+}
+.button.button:last-child:active{
+    background:greenyellow;
+}
+.double{
+    flex-basis: 40%;
+}
+.triple{
+    flex-basis: 60%;
+}
