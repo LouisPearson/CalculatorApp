@@ -101,9 +101,11 @@ function handleNumber(numStr){
 }
 
 function init(){
-    document.querySelector('.buttons').addEventListener('click',function(event){
+    document.querySelector('.buttons').addEventListener('click',
+    function(event){
         buttonClick(event.target.innerText);
-    })
+    }
+    )
 
 }
 init();
